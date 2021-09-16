@@ -1,5 +1,5 @@
-@import 'variables/colors';
-@import 'common';
+@import "variables/colors";
+@import "common";
 
 .rcw-messages-container {
   background-color: $white;
@@ -7,17 +7,29 @@
   max-height: 410px;
   overflow-y: scroll;
   padding-top: 10px;
+  position: relative;
   -webkit-overflow-scrolling: touch;
 }
 
+.rcw-messages-close-button {
+  position: fixed;
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(10px);
+  width: 32px;
+  height: 32px;
+  border-radius: 8px 0px 0px 8px;
+  top: 80px;
+  left: -32px;
+  border: none;
+  z-index: 9999;
+}
 .rcw-full-screen {
-
   .rcw-messages-container {
     @include messages-container-fs;
   }
 }
 
-@media screen and (max-width: 800px)  {
+@media screen and (max-width: 800px) {
   .rcw-messages-container {
     @include messages-container-fs;
   }

@@ -76,6 +76,7 @@
     "prettier-eslint": "^5.1.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
+    "sass": "^1.41.0",
     "sass-loader": "^6.0.6",
     "source-map-loader": "^0.2.4",
     "style-loader": "^0.18.2",
